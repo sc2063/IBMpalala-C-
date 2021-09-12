@@ -29,4 +29,31 @@ var type=document.getElementById("inputtype")
             document.write("<br>");
         }
      }
+     if(type.value==3)
+     {
+        for(var i=1;i<=high.value;i++)
+        {
+            for(var j=1;j<=high.value-i;j++)
+            {
+               document.write('&nbsp ');
+            }
+           for(var k=1;k<=i;k++)
+           {
+               document.write("* &nbsp ");
+           }
+           document.write("<br>");
+       }
+       for(var i=high.value-1;i>=1;i--)
+         {
+             for(var j=1;j<=high.value-i;j++)
+             {
+                document.write('&nbsp ');
+             }
+            for(var k=1;k<=i;k++)
+            {
+                document.write("* &nbsp ");
+            }
+            document.write("<br>");
+        }
+     }
  }
