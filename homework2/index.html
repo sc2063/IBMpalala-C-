@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/public.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<script src="js/index.js">
+</script>
+<script>
+    "use strict";
+    num=100;
+    //var num=100;
+    //num is unot defined 在严格模式下不允许意外创建变量
+</script>
+<script>
+    "use strict";
+    function fun()
+    {
+        try{
+            num=5;
+        }
+        catch(error)
+        {
+            console.log(error.message);
+        }
+    }
+    fun();
+</script>
+</body>
+</html>
